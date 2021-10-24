@@ -1,4 +1,4 @@
 #!/bin/sh
 # https://git-scm.docs/githooks
 
-yarn check-types && yarn lint-staged
+yarn check-types && yarn test && yarn lint-staged
