@@ -1,4 +1,4 @@
-import Icon from '@components/Icon/Icon.component'
+import Icon from '@/components/Icon/Icon.component'
 import styles from './Card.module.css'
 
 interface Props {

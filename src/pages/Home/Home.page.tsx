@@ -1,4 +1,4 @@
-import Card from '@components/Card/Card.component'
+import Card from '@/components/Card/Card.component'
 import Head from 'next/head'
 import styles from './Home.module.css'
 

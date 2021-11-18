@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer'
 import Home from './Home.page'
 
 describe('Home', () => {
-  it('renders Home page', async () => {
+  test('renders Home page', async () => {
     const { render } = await getPage({
       route: '/',
     })
@@ -14,7 +14,7 @@ describe('Home', () => {
     expect(screen.getByText('Next.js!')).toBeInTheDocument()
   })
 
-  it('renders a heading', () => {
+  test('renders a heading', () => {
     render(<Home />)
 
     const heading = screen.getByRole('heading', {
@@ -23,10 +23,8 @@ describe('Home', () => {
 
     expect(heading).toBeInTheDocument()
   })
-})
 
-describe('Snapshots', () => {
-  it('renders homepage unchanged', () => {
+  test('renders homepage unchanged', () => {
     const tree = renderer.create(<Home />).toJSON()
     expect(tree).toMatchSnapshot()
   })
